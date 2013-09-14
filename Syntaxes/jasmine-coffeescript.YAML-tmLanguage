@@ -1,0 +1,8 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Jasmine CoffeeScript
+scopeName: source.coffee.jasmine
+fileTypes: [spec.js.coffee, spec.coffee]
+uuid: 5c87cc44-13de-49bb-9c01-b8db446071d6
+
+patterns:
