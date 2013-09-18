@@ -6,3 +6,35 @@ fileTypes: [spec.js.coffee, spec.coffee]
 uuid: 5c87cc44-13de-49bb-9c01-b8db446071d6
 
 patterns:
+- name: keyword.other.coffee
+  match: (?<!\.)\b(beforeEach|afterEach)\b(?![?!])
+- name: keyword.other.coffee
+  match: (?<!\.)\b(beforeEach|afterEach)\b(?![?!])
+- name: entity.name.class.coffee
+  match: \@sut
+- include: '#describes'
+- include: '#it'
+- include: source.coffee
+
+repository:
+  describes:
+    name: meta.coffee.behaviour
+    begin: ^\s*(describe)\b
+    beginCaptures:
+      '1': {name: keyword.other.coffee.behaviour}
+    end: $
+    endCaptures:
+      '1': {name: keyword.control.coffee.start-block}
+    patterns:
+    - include: source.coffee
+
+  it:
+    name: meta.coffee.example
+    begin: ^\s*(it)\b
+    beginCaptures:
+      '1': {name: keyword.other.coffee.example}
+    end: $
+    endCaptures:
+      '1': {name: keyword.control.coffee.start-block}
+    patterns:
+    - include: source.coffee
