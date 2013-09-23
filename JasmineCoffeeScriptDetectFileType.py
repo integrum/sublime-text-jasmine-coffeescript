@@ -3,8 +3,6 @@ import os
 
 class JasmineCoffeeScriptDetectFileTypeCommand(sublime_plugin.EventListener):
   """ Detects current file type if the file's extension isn't conclusive """
-  """ Modified for Ruby on Rails and Sublime Text 2 """
-  """ Original pastie here: http://pastie.org/private/kz8gtts0cjcvkec0d4quqa """
 
   def on_load(self, view):
     filename = view.file_name()
