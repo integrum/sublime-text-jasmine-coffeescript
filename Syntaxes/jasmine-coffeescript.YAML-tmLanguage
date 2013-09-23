@@ -11,7 +11,7 @@ patterns:
 - name: keyword.other.coffee
   match: (?<!\.)\b(beforeEach|afterEach)\b(?![?!])
 - name: entity.name.class.coffee
-  match: \@sut
+  match: \@\w+\b
 - include: '#describes'
 - include: '#it'
 - include: source.coffee

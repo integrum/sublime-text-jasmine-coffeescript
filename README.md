@@ -21,4 +21,4 @@ Special Syntax Highlighting
 * afterEach
 * describes
 * it
-* @sut
+* @instance_variables
