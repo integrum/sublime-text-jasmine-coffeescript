@@ -31,7 +31,7 @@
 		</dict>
 		<dict>
 			<key>include</key>
-			<string>#describes</string>
+			<string>#describe</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -44,10 +44,10 @@
 	</array>
 	<key>repository</key>
 	<dict>
-		<key>describes</key>
+		<key>describe</key>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(describe)\b</string>
+			<string>^\s*(x?describe)\b</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>1</key>
