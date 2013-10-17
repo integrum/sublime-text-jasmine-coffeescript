@@ -11,7 +11,7 @@ class JasmineCoffeeScriptDetectFileTypeCommand(sublime_plugin.EventListener):
 
     name = os.path.basename(filename.lower())
     if name.endswith("spec.js.coffee") or name.endswith("spec.coffee"):
-      set_syntax(view, "jasmine-coffeescript", "jasmine-coffeescript/Syntaxes")
+      set_syntax(view, "Jasmine CoffeeScript", "jasmine-coffeescript/Syntaxes")
 
 def set_syntax(view, syntax, path=None):
   if path is None:
